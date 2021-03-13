@@ -16,17 +16,16 @@ namespace _5951071031_Ha_Nhat_Huy.Controllers
             var weatherInfList = new List<StudentInfo>();
 
 
-           for(int i = 0; i < 10; i++)
-            {
+           
                 var weatherInfo = new StudentInfo
                 {
                     Hoten = "Ha Nhat Huy",
-                    MaSoSv = "595107103" + i,
+                    MaSoSv = "5951071031",
                     Lop = "CQ.CNTT.K59",
                     NgaySinh = new DateTime(2000, 06, 25)
                 };
                 weatherInfList.Add(weatherInfo);
-            }
+            
             
             return weatherInfList;
         }
@@ -36,7 +35,7 @@ namespace _5951071031_Ha_Nhat_Huy.Controllers
         {
             return new StudentInfo {
                 Hoten = "Ha Nhat Huy",
-                MaSoSv = "595107103" + id,
+                MaSoSv = "5951071031",
                 Lop = "CQ.CNTT.K59",
                 NgaySinh = new DateTime(2000, 06, 25)
             };
