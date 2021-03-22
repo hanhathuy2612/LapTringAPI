@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Add Map</title>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <style type="text/css">
+        /* Set the size of the div element that contains the map */
+        
+        #map {
+            height: 400px;
+            /* The height is 400 pixels */
+            width: 100%;
+            /* The width is the width of the web page */
+        }
+    </style>
+    // Initialize and add the map
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <h3>My Google Maps Demo</h3>
+    <input id="pac-input" class="controls" type="text" placeholder="Search Box" />
+    <!--The div element for the map -->
+    <div id="map">
+
+    </div>
+
+    <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0Bdp4iDXA6maHl2_QV5QoaAWauyArlcQ&callback=initMap" async></script>
+</body>
+
+</html>
